@@ -1,0 +1,49 @@
+.button-primary {
+  font-family: inherit;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: var(--button-color);
+  padding: 10px 32px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+
+  &:hover,
+  &:focus {
+    background-color: var(--white-color);
+    color: var(--accent-color);
+  }
+}
+
+.portfolio-button {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  padding: 6px 22px;
+  border: solid 1px;
+  background-color: var(--secondary-background);
+  border-color: var(--secondary-background);
+  border-radius: 4px;
+
+  transition-property: background-color;
+  transition-duration: 100ms;
+  transition-timing-function: linear;
+
+  &:hover,
+  &:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    border-radius: 4px;
+  }
+}

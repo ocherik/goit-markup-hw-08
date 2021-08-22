@@ -1,0 +1,30 @@
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.works__overlay {
+  position: absolute;
+
+  display: inline-block;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--white-color);
+}
+
+.works__text {
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--white-color);
+}
