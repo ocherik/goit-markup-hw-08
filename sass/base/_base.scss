@@ -1,13 +1,32 @@
 .container {
-  width: 1200px;
-  margin: 0 auto;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
 }
 
-.item {
-  margin-left: 30px;
-  flex-basis: calc((100% - 120px) / 4);
-
-  position: relative;
+//0-767
+@media screen and (max-width: 767px) {
+  .container {
+    width: 480px;
+  }
 }
+
+//768+
+@media screen and (min-width: 768px) {
+  .container {
+  }
+
+  .item {
+    margin-left: 30px;
+    position: relative;
+    flex-basis: calc((100% / 2) - 60px);
+  }
+}
+
+// .container {
+//   width: 1200px;
+//   margin: 0 auto;
+//   padding-left: 15px;
+//   padding-right: 15px;
+// }
