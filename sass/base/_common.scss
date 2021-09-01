@@ -24,6 +24,12 @@ img {
   text-decoration: none;
 }
 
+.list {
+  list-style: none;
+  padding: 0;
+  // margin: 0;
+}
+
 li {
   list-style: none;
 }
@@ -43,8 +49,15 @@ body {
 }
 
 .container-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 h2 {
