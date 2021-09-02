@@ -266,29 +266,31 @@ button {
 
 .social-list {
   display: flex;
-  padding-bottom: 30px;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list__link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  fill: var(--social-icons);
+}
+
+.social-list__link:hover, .social-list__link:focus {
+  background-color: var(--accent-color);
+  fill: var(--white-color);
 }
 
 .social-list__icon {
   width: 20px;
   height: 20px;
-}
-
-.social-list__link {
-  fill: var(--social-icons);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  transition: fill 250ms var(--timing-function);
-}
-
-.social-list__link:hover, .social-list__link:focus {
-  background-color: var(--accent-color);
-  fill: #ffffff;
 }
 
 .hero-title {
@@ -823,42 +825,61 @@ h3.social-title {
 }
 
 .team__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  justify-content: center;
+  text-align: center;
+  margin-bottom: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 
 .team__card {
-  text-align: center;
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: var(--white-color);
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team__card {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__card {
+    flex-basis: calc((100% - 120px) / 4);
+  }
 }
 
 .team__item-content {
-  background-color: #ffffff;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 30px 0;
 }
 
 .team__name {
-  font-style: normal;
+  font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  color: var(--secondary-color);
+  color: var(--title-color);
   margin-bottom: 10px;
-  padding-top: 30px;
 }
 
 .team__item-desc {
+  font-family: var(--main-font);
+  font-weight: normal;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
+  color: var(--text-color);
+  margin-bottom: 16px;
 }
 
 .clients {
