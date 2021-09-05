@@ -468,6 +468,7 @@ h3.social-title {
 .modal-form {
   display: flex;
   flex-direction: column;
+  padding: 40px;
 }
 
 .modal-form__header {
