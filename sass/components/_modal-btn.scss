@@ -17,7 +17,8 @@
   transition-timing-function: linear;
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     background-color: var(--white-color);
     color: var(--accent-color);
   }
