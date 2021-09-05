@@ -23,13 +23,20 @@
     <!--HEADER-->
     
     <header class="page-header">
-      <div class="container">
+      <div class="header-container container">
         <nav class="nav">
           <a href="./" class="page-logo">
             <span class="page-logo__first-half">Web</span><span>Studio</span>
           </a>
+
+          <button class="menu-open touch" type="button">
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-menu">
+              </use>
+            </svg>
+          </button>
     
-          <ul class="site-nav">
+          <ul class="site-nav list">
             <li class="nav__link">
               <a href="./" class="link-item">Студия</a>
             </li>
@@ -41,7 +48,7 @@
             </li>
           </ul>
     
-          <ul class="contact__nav">
+          <ul class="contact__nav list">
             <li class="nav__link-contact contact-email">
               <a href="mailto:info@devstudio.com" class="touch contact__item">
                 <svg class="contact__icon" width="16" height="12">
@@ -260,30 +267,30 @@
     
         <div class="footer-social">
           <h3 class="social-title">Присоединяйтесь</h3>
-          <ul class="footer-social__icons">
-            <li class="footer-social__item">
-              <a href="" class="footer-social__link">
+          <ul class="footer-social__icons social-list list">
+            <li class="social-list__item">
+              <a href="" class="footer-social__link social-list__icon">
                 <svg class="footer-social__icon">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social__item">
-              <a href="" class="footer-social__link">
+            <li class="social-list__item">
+              <a href="" class="footer-social__link social-list__icon">
                 <svg class="footer-social__icon">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social__item">
-              <a href="" class="footer-social__link">
+            <li class="social-list__item">
+              <a href="" class="footer-social__link social-list__icon">
                 <svg class="footer-social__icon">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social__item">
-              <a href="" class="footer-social__link">
+            <li class="social-list__item">
+              <a href="" class="footer-social__link social-list__icon">
                 <svg class="footer-social__icon">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -291,23 +298,27 @@
             </li>
           </ul>
         </div>
-        <form action="#" class="footer-form">
-          <label class="footer-form__field">
-            Подпишитесь на рассылку
-            <div class="footer-form__div">
-              <input type="mail" class="footer-form__input touch" name="user-mail" placeholder="Email" required>
     
-          </label>
-          <button type="submit" class="footer-form__btn">
-            Подписаться
-            <svg width="24" heigh="24" class="footer-form__icon">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
-      </div>
-      </form>
+        <div class="footer-form">
+          <b class="footer__title">Подпишитесь на
+            рассылку</b>
+    
+          <form class="footer-subscribe" action="#">
+            <label for="user-email"></label>
+            <input class="subscribe__input" type="email" name="user-email" id="user-email" placeholder="E-mail" required>
+            <button type="submit" class="subscribe__button touch-transform">Подписаться
+              <svg class="subscribe__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send">
+                </use>
+              </svg>
+            </button>
+    
+          </form>
+        </div>
+    
       </div>
     </footer>
+
     </body>
     
     </html>
