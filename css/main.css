@@ -515,7 +515,6 @@ h3.social-title {
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-right: 70px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -807,7 +806,6 @@ h3.social-title {
 @media screen and (min-width: 768px) {
   .subscribe__input {
     width: 450px;
-    margin-bottom: 20;
   }
 }
 
@@ -834,11 +832,18 @@ h3.social-title {
   border-radius: 4px;
   border: none;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 .subscribe__button:hover, .subscribe__button:focus, .subscribe__button:active {
   color: var(--white-color);
   background-color: var(--secondary-background);
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe__button {
+    margin-top: 0;
+  }
 }
 
 .subscribe__icon {
