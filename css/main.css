@@ -803,6 +803,7 @@ h3.social-title {
 @media screen and (min-width: 768px) {
   .subscribe__input {
     width: 450px;
+    margin-bottom: 20;
   }
 }
 
