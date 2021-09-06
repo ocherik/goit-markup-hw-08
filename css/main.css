@@ -471,6 +471,11 @@ h3.social-title {
   margin-bottom: 20px;
 }
 
+.footer__title {
+  display: block;
+  margin-bottom: 20px;
+}
+
 .footer {
   display: flex;
   align-items: center;
@@ -787,8 +792,6 @@ h3.social-title {
 .subscribe__input {
   width: 100%;
   padding: 15px 16px;
-  margin-bottom: 20px;
-  margin-top: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
