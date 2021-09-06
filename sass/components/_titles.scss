@@ -20,10 +20,14 @@
 }
 
 .title-case {
+  font-family: var(--main-font);
+  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: #212121;
+  margin-bottom: 4px;
 }
 
 h3.about-title {
