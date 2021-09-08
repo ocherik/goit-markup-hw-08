@@ -3,7 +3,7 @@
 }
 
 .about {
-  margin-bottom: -30px;
+  margin-top: -30px;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -12,9 +12,15 @@
   }
 }
 
+.item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}
+
 .item {
   width: 100%;
-  margin-bottom: 30px;
+  margin-top: 30px;
 
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 60px) / 2);
@@ -22,6 +28,7 @@
   }
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 120px) / 4);
+    margin-left: 30px;
   }
 
   &::before {
